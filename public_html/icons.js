@@ -790,3 +790,7 @@ angular.module('myApp', []).controller('iconsController', ["$scope", "$document"
         "youtube-square",
     ];
 }]);
+
+window.onload = function(){
+    document.getElementById("search").focus();
+};
