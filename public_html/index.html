@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Icons Picker</title>
+    <style>
+      li { list-style: none; display: inline-block; width: 250px; padding: 5px; cursor: pointer;}
+      .fa { color: blue; }
+      * { font-family: verdana; font-size: 14px; }
+      h2 { font-size: 14px; clear: both; }
+    </style>
+  </head>
+  <body ng-app="myApp">
+  <div ng-controller="iconsController">
+  <p>
+    <input type="text" id="search" value="" ng-model="search" placeholder="search...">
+    <input type="text" id="global" value="" readonly="readonly" placeholder="copy..." style="width: 350px;" />
+  </p>
+  <h2>Fontawesome 4.7.0 icons</h2>
+  <p>Click on an icon text to copy html into clipboard.</p>
+  <p>There are <strong>#{{names.length}}</strong> icons.</p>
+  <ul>
+    <li ng-repeat="name in names | filter:search" ng-click="copy(name)">
+      <i class="fa fa-{{name}}" aria-hidden="true"></i> {{name}}
+      <input class="{{name}}" id="{{name}}" style="display: none;" value="<i class='fa fa-{{name}}' aria-hidden='true'></i>" />
+    </li>
+  </ul>
+  
+</div>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="icons.js"></script>
+</body>
+</html>
