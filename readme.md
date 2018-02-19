@@ -1,6 +1,8 @@
 # Icons Picker for Fontawesome
 
-Picks icons from Fontawesome 4.7.0.
+Picks icons from FontAwesome 4.7.0.
+
+## How?
 
  * Search icons
  * Narrow down the list
@@ -8,12 +10,13 @@ Picks icons from Fontawesome 4.7.0.
  * HTML will be copied to clipboard.
 
 
-## How the list is modified?
+## List processing
 
  * Categories removed.
  * Icon names sorted.
- * Converted icon names list as AngularJS variable.
+ * Alias removed.
  * Duplicate names from different categories removed.
+ * Converted icon names list as AngularJS variable.
 
 
 ## Story
@@ -26,7 +29,7 @@ And a simple javascript copies the corresponding html into clipboard.
 
 So,
 
-Search, Click, Paste! Done.
+**Search, Click, Paste**! Done.
 
 
 ## Platforms used
@@ -34,4 +37,10 @@ Search, Click, Paste! Done.
  * AngularJS based searching of icons.
 
 ## Resources
-* [FontAwesome](https://github.com/FortAwesome/Font-Awesome) - [CDN](https://www.bootstrapcdn.com/fontawesome/)
+
+ * [FontAwesome](https://github.com/FortAwesome/Font-Awesome) - [4.7.0 icons](https://fontawesome.com/v4.7.0/icons/) - [CDN](https://www.bootstrapcdn.com/fontawesome/).
+
+
+## Disclaimer
+
+ * The purpose is to inspire usage of FontAwesome, not to reduce the page impressions in original website, in order to pick up the icons.
