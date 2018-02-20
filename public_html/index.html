@@ -1,28 +1,32 @@
 <html>
-  <head>
-    <title>FontAwesome Icons Picker</title>
-    <link rel="stylesheet" href="icons.css" />
-  </head>
-  <body ng-app="myApp">
+<head>
+  <title>FontAwesome Icons Picker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="icons.css" />
+</head>
+<body ng-app="myApp" class="w3-pale-green">
   <div ng-controller="iconsController">
-  <p>
-    <input type="text" id="search" value="" ng-model="search" placeholder="search...">
-    <input type="text" id="global" value="" readonly="readonly" placeholder="copy..." style="width: 350px;" />
-  </p>
-  <h2>FontAwesome 4.7.0 icons</h2>
-  <p>Click on an icon text to copy html into clipboard.</p>
-  <p>There are <strong>#{{(names|filter:search).length}}</strong> icons.</p>
-  <ul>
-    <li ng-repeat="name in names|filter:search" ng-click="copy(name)">
-      <i class="fa fa-{{name}}" aria-hidden="true"></i> {{name}}
-      <input class="{{name}}" id="{{name}}" style="display: none;" value="<i class='fa fa-{{name}}' aria-hidden='true'></i>" />
-    </li>
-  </ul>
-  
-</div>
-
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="icons.js"></script>
-</body>
+    <div class="picker w3-container w3-padding w3-yellow w3-bottombar w3-border-green">
+      <h2>FontAwesome <a href="https://fontawesome.com/v4.7.0/icons/">4.7.0 icons</a></h2>
+      <div>
+        <input type="text" id="search" value="" ng-model="search" placeholder="search...">
+        <span class="clear" ng-click="search='';"><i class='fa fa-minus-circle' aria-hidden='true'></i> clear</span>
+        <input type="text" id="global" value="" readonly="readonly" placeholder="copy html..." style="width: 350px;" />
+      </div>
+      <p class="w3-small">Click on an icon text to copy html into clipboard.</p>
+    </div>
+    <div class="icons w3-panel">
+      <p>There are <strong>#{{(names|filter:search).length}}</strong> icons.</p>
+      <ul>
+        <li ng-repeat="name in names|filter:search" ng-click="copy(name)">
+          <i class="fa fa-{{name}}" aria-hidden="true"></i> {{name}}
+          <input class="{{name}}" id="{{name}}" style="display: none;" value="<i class='fa fa-{{name}}' aria-hidden='true'></i>" />
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="icons.js"></script>
+  </body>
 </html>
