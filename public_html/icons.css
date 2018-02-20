@@ -12,12 +12,15 @@ li
 	padding: 5px;
 	width: 250px;
 	height: 30px;
+	margin: 0px;
 	overflow: hidden;
+	border-bottom: 1px solid #DDDDDD;
 }
 
 li:hover
 {
 	background-color: aquamarine;
+	border-bottom: 1px solid #666666;
 }
 
 .fa
@@ -25,7 +28,7 @@ li:hover
 	color: blue;
 }
 
-h2
+h1
 {
 	clear: both;
 	font-size: 18px;

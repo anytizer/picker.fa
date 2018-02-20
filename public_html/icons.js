@@ -1,10 +1,21 @@
-angular.module('myApp', []).controller('iconsController', ["$scope", "$document", function($scope, $document) {
+var lastload = function(){
+    document.getElementById("search").focus();
+};
+window.onload = lastload;
+
+angular.module('myApp', []).controller('iconsController', ["$scope", function($scope) {
+    $scope.search = "";
     $scope.copy = function(name)
     {
-        var global = document.getElementById('global');
+        var global = document.getElementById("global");
         global.value=document.getElementById(name).value;
         global.select();
         document.execCommand("Copy");
+    };
+
+    $scope.clear = function(){
+        $scope.search="";
+        lastload();
     };
 
     $scope.names = [
@@ -790,7 +801,3 @@ angular.module('myApp', []).controller('iconsController', ["$scope", "$document"
         "youtube-square",
     ];
 }]);
-
-window.onload = function(){
-    document.getElementById("search").focus();
-};
