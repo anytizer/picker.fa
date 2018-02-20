@@ -1,4 +1,4 @@
-# Icons Picker for Fontawesome
+# Icons Picker for FontAwesome
 
 Picks icons from FontAwesome 4.7.0.
 
