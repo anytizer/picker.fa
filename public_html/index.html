@@ -10,12 +10,13 @@
     <div class="picker w3-container w3-padding w3-yellow w3-bottombar w3-border-green">
       <h2>FontAwesome <a href="https://fontawesome.com/v4.7.0/icons/">4.7.0 icons</a></h2>
       <div>
-        <input type="text" id="search" value="" ng-model="search" placeholder="search...">
+        <input type="text" id="search" value="" ng-model="search" placeholder="search an icon...">
+        <input type="text" id="global" value="" readonly="readonly" placeholder="copy html from here..." style="width: 350px;" />
         <span class="clear" ng-click="search='';"><i class='fa fa-minus-circle' aria-hidden='true'></i> clear</span>
-        <input type="text" id="global" value="" readonly="readonly" placeholder="copy html..." style="width: 350px;" />
       </div>
       <p class="w3-small">Click on an icon text to copy html into clipboard.</p>
     </div>
+    <div class="placeholder"></div>
     <div class="icons w3-panel">
       <p>There are <strong>#{{(names|filter:search).length}}</strong> icons.</p>
       <ul>

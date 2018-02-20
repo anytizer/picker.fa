@@ -11,6 +11,8 @@ li
 	list-style: none;
 	padding: 5px;
 	width: 250px;
+	height: 30px;
+	overflow: hidden;
 }
 
 li:hover
@@ -30,6 +32,12 @@ h2
 	font-weight: bold;
 }
 
+input[type="text"]
+{
+	padding: 6px;
+	height: 40px;
+}
+
 span.clear
 {
 	cursor: pointer;
@@ -43,9 +51,18 @@ span.clear
 	position: fixed;
 	z-index: 999;
 	clear: both;
+	max-height: 140px;
+	overflow: hidden;
+}
+
+/**
+ * Uncover area overlapped with picker header
+ */
+.placeholder
+{
+	margin-top: 140px;
 }
 
 .icons
 {
-	margin-top: 150px;
 }
