@@ -3,7 +3,7 @@ var lastload = function(){
 };
 window.onload = lastload;
 
-angular.module('myApp', []).controller('iconsController', ["$scope", function($scope) {
+angular.module('myApp', []).controller('iconsController', ["$scope", "$document", function($scope, $document) {
     $scope.search = "";
     $scope.copy = function(name)
     {
@@ -15,9 +15,13 @@ angular.module('myApp', []).controller('iconsController', ["$scope", function($s
 
     $scope.clear = function(){
         $scope.search="";
+        document.getElementById("global").value="";
         lastload();
     };
 
+    /**
+     * @see https://fontawesome.com/v4.7.0/icons/
+     */
     $scope.names = [
         "address-book",
         "address-book-o",
