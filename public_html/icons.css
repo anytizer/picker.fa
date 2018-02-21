@@ -4,6 +4,12 @@
 	font-size: 14px;
 }
 
+.wrapper
+{
+	min-width: 800px;
+	margin: 0px auto;
+}
+
 li
 {
 	cursor: pointer;
@@ -64,8 +70,4 @@ span.clear
 .placeholder
 {
 	margin-top: 140px;
-}
-
-.icons
-{
 }

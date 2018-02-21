@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="icons.css" />
 </head>
 <body ng-app="myApp" class="w3-pale-green">
-  <div ng-controller="iconsController">
+  <div class="wrapper" ng-controller="iconsController">
     <div class="picker w3-container w3-padding w3-yellow w3-bottombar w3-border-green">
       <h1>
         Icons Picker for FontAwesome
@@ -21,7 +21,7 @@
         <input type="text" id="global" value="" readonly="readonly" placeholder="copy html from here..." style="width: 350px;" />
         <span class="clear" ng-click="clear();"><i class='fa fa-minus-circle' aria-hidden='true'></i> clear</span>
       </div>
-      <p class="w3-small">Click on an icon text to copy its html into clipboard.</p>
+      <p class="w3-small">Click on an icon text to copy its html into clipboard. Made for Computer Screens only min 800px wide.</p>
     </div>
     <div class="placeholder"></div>
     <div class="icons w3-panel">
