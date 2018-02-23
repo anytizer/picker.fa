@@ -23,6 +23,7 @@ angular.module('myApp', []).controller('iconsController', ["$scope", "$document"
      * @see https://fontawesome.com/v4.7.0/icons/
      */
     $scope.names = [
+        "500px",
         "address-book",
         "address-book-o",
         "address-card",
@@ -354,6 +355,7 @@ angular.module('myApp', []).controller('iconsController', ["$scope", "$document"
         "gratipay",
         "grav",
         "group",
+        "h-square",
         "hacker-news",
         "hand-grab-o",
         "hand-lizard-o",
@@ -379,6 +381,7 @@ angular.module('myApp', []).controller('iconsController', ["$scope", "$document"
         "heartbeat",
         "history",
         "home",
+        "hospital-o",
         "hotel",
         "hourglass",
         "hourglass-1",
@@ -466,6 +469,7 @@ angular.module('myApp', []).controller('iconsController', ["$scope", "$document"
         "maxcdn",
         "meanpath",
         "medium",
+        "medkit",
         "meetup",
         "meh-o",
         "mercury",
@@ -650,6 +654,7 @@ angular.module('myApp', []).controller('iconsController', ["$scope", "$document"
         "steam-square",
         "step-backward",
         "step-forward",
+        "stethoscope",
         "sticky-note",
         "sticky-note-o",
         "stop",
@@ -747,6 +752,7 @@ angular.module('myApp', []).controller('iconsController', ["$scope", "$document"
         "user",
         "user-circle",
         "user-circle-o",
+        "user-md",
         "user-o",
         "user-plus",
         "user-secret",
