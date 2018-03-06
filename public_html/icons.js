@@ -3,12 +3,13 @@ var lastload = function(){
 };
 window.onload = lastload;
 
-angular.module('myApp', []).controller('iconsController', ["$scope", "$document", function($scope, $document) {
+angular.module("myApp", []).controller('iconsController', ["$scope", "$document", function($scope, $document) {
     $scope.search = "";
     $scope.copy = function(name)
     {
         var global = document.getElementById("global");
         global.value=document.getElementById(name).value;
+        global.value = global.value.replace(/'/g, '"');
         global.select();
         document.execCommand("Copy");
     };
