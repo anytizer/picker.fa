@@ -34,12 +34,13 @@ So,
 
 ## Platforms used
 
- * AngularJS based searching of icons.
+ * [AngularJS](https://code.angularjs.org/) based searching of icons.
+ * [W3CSS](https://www.w3schools.com/w3css/)
 
 
 ## Resources
 
- * [FontAwesome](https://github.com/FortAwesome/Font-Awesome) - [4.7.0 icons](https://fontawesome.com/v4.7.0/icons/) - [CDN](https://www.bootstrapcdn.com/fontawesome/).
+ * [FontAwesome](https://github.com/FortAwesome/Font-Awesome) - [4.7.0 icons](https://fontawesome.com/v4.7.0/icons/) - [CDN](https://www.bootstrapcdn.com/fontawesome/) - [Demo](https://anytizer.github.io/demo/picker.fa/index.html).
 
 
 ## Disclaimer
