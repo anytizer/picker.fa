@@ -1,6 +1,6 @@
 # Icons Picker for FontAwesome
 
-An AngularJS interface to pick icons from FontAwesome 4.7.0 collection.
+An AngularJS interface to [pick icons from FontAwesome 4.7.0](https://anytizer.github.io/demo/picker.fa/index.html) collection.
 
 
 ## How does it work?
