@@ -71,3 +71,15 @@ span.clear
 {
 	margin-top: 140px;
 }
+
+input#search
+{
+	background-color: #EEEEEE;
+}
+
+input#global
+{
+	width: 400px;
+	background-color: rgb(230, 221, 97);
+	border: 1px solid black;
+}

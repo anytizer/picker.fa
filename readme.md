@@ -25,7 +25,7 @@ The list of icons is subject to change from the original list.
 
 ## Story
 
-While FontAwesome provides its own [icon picker](https://fontawesome.com/v4.7.0/icons/), navigating to different pages per icon is tedious. The application is a single page interfcace to search, click and paste the corresponding icon HTML. The search box provides a common location to find icons. AngularJS provides the navigation, narrows down the search list. And a simple javascript copies the corresponding html into clipboard.
+While FontAwesome provides its own [icon picker](https://fontawesome.com/v4.7.0/icons/), navigating to different pages per icon is tedious. The application is a single page interfcace to search, click and paste the corresponding icon's HTML. The search box provides a common location to find all available icons. AngularJS provides the navigation to narrow down the search list. And a simple javascript copies the corresponding html into your clipboard.
 
 So,
 
@@ -44,4 +44,4 @@ So,
 
 ## Disclaimer
 
-The purpose is to inspire usage of FontAwesome, not to reduce the page impressions in its original website, in order to pick up the icons. The interface provides picker to older versions.
+The purpose is to inspire usage of FontAwesome, not to reduce the page impressions in its original website. The interface provides icon picker to an older version.
